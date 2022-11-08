@@ -53,7 +53,7 @@ namespace HOMEWORK_2
                 return this.matrix;
             }
             set
-            {
+            {// Зміна розміру мусить викликати виділення пам'яті
                 this.matrix = value;
             }
         }
@@ -83,7 +83,7 @@ namespace HOMEWORK_2
         {
             int number = 1;
             for (int i = 0; i < this.size; i++)
-            {
+            {//можна оптимізувати
                 if (i % 2 == 0)
                 {
                     for (int j = 0; j < this.size; j++)
@@ -208,7 +208,7 @@ namespace HOMEWORK_2
         }
 
         public void LongNum()
-        {
+        {//заповнення і пошук в одному методі - не добре!
             Random r = new Random();
             for (int i = 0; i < this.size; i++)
             {
